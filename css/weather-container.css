@@ -1,0 +1,29 @@
+.weather-container {
+  max-width: 1170px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.day-forecast {
+  padding-top: 20px;
+  margin: 30px;
+  max-width: 810px;
+  border-radius: 16px;
+  /* background-color: rgba(43, 88, 143, 65%); */
+  background-color: rgba(29, 117, 211, 75%);
+}
+
+.sun-and-moon {
+  margin: 15px auto;
+  width: 90.7%;
+  max-width: 1080px;
+  height: 172px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 16px;
+  background-color: rgba(43, 88, 143, 65%);
+}
+
+

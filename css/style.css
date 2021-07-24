@@ -1,0 +1,28 @@
+@import url("../css/weather-container.css");
+@import url("../css/current-weather-info.css");
+@import url("../css/sunrise-and-sunset.css");
+@import url("../css/other-cities-search.css");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/background_sky_2.jfif");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+  text-shadow: -2px 4px 10px rgba(0, 0, 0, 85%);
+}
+
+
+

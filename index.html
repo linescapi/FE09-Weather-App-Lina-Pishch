@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Weather Info</title>
+</head>
+<body>
+  <section class="body">
+    <div class="container weather-container">
+      <div class="day-forecast">
+        <div class="city-search">
+          <input type="text" 
+          class="search-bar"
+          placeholder="Search">
+          <button class="city-search-button">
+            <svg 
+            stroke="currentColor" 
+            fill="currentColor" 
+            stroke-width="0" 
+            viewBox="0 0 16 16" 
+            height="15px" 
+            width="15px" 
+            xmlns="http://www.w3.org/2000/svg">
+              <path 
+              fill-rule="evenodd" 
+              d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" 
+              clip-rule="evenodd">
+              </path>
+              <path 
+              fill-rule="evenodd" 
+              d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" 
+              clip-rule="evenodd">
+              </path>
+            </svg>
+          </button>
+        </div>
+        <div class="user-location"></div>
+        <div class="current-day-info">
+          <div class="now-weather-image">
+            <div class="weather-img">
+              <img class="now-weather-icon" src="img/sad_cloud.png" alt="weather-icon">
+            </div>
+            <div class="image-description">
+              <h4 class="image-weather-descp">We can not know that...</h4>
+            </div>
+          </div>
+          <div class="current-temperature">
+            <div class="temperature-c-or-f">
+              <div class="TEMPERATURE">
+                <h1 class="temperature-number">-</h1>
+              </div>
+              <div class="celsius-or-fahrenheit">
+                <div class="celsius">
+                  <h3 class="C" id="C">C</h3>
+                </div>
+                <div class="fahrenheit">
+                  <h3 class="F" id="F">F</h3>
+                </div>
+              </div>
+            </div>
+            <div class="current-day-and-time">
+              <h6 class="day-and-time">-</h6>
+            </div>
+            <div class="feels-like">
+              <h3 class="temp-feels-like">Feels like -</h3>
+            </div>
+          </div>
+          <div class="other-current-information">
+            <div class="other-information visibility">
+              <h3 class="other-info-title visibility-title">Visibility</h3>
+              <h3 class="other-info-value visibility-value">-</h3>
+            </div>
+            <div class="other-information pressure">
+              <h3 class="other-info-title pressure-title">Pressure</h3>
+              <h3 class="other-info-value pressure-value">-</h3>
+            </div>
+            <div class="other-information humidity">
+              <h3 class="other-info-title humidity-title">Humidity</h3>
+              <h3 class="other-info-value humidity-value">-</h3>
+            </div>
+            <div class="other-information wind">
+              <h3 class="other-info-title wind-title">Wind</h3>
+              <h3 class="other-info-value"><span class="wind-value">-</span> km/h</h3>
+            </div>
+          </div>
+          <div class="sunrise-and-sunset">
+            <div class="sunrise-and-sunset-title">
+              <h2 class="srise-and-sset-title">Sunrise & Sunset</h2>
+            </div>
+            <div class="s-and-s-inner">
+              <div class="sunrise">
+                <h5 class="sunrise-time">Sunrise <span class="todays-sunrise">-</span></h5>
+              </div>
+              <div class="s-and-s-img"></div>
+              <div class="sunset">
+                <h5 class="sunset-time">Sunset <span class="todays-sunset">-</span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" 
+  integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" 
+  crossorigin="anonymous" 
+  referrerpolicy="no-referrer"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

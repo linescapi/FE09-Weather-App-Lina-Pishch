@@ -1,0 +1,57 @@
+.sunrise-and-sunset {
+  margin-top: 35px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 15%);
+  border-radius: 16px;
+  padding: 10px 0 20px 0;
+}
+
+.sunrise-and-sunset-title {
+  margin: 15px 0 30px 0;
+}
+
+.srise-and-sset-title {
+  font-weight: 300;
+  font-size: 26px;
+  color: white;
+  text-shadow: -2px 4px 10px rgba(0, 0, 0, 85%);
+  text-align: center;
+}
+
+.s-and-s-inner {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.s-and-s-img {
+  margin: 15px;
+  margin-top: -23px;
+  width: 75px;
+  height: 75px;  
+  background: url("../img/sunrise&sunset.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.sunrise, .sunset {
+  margin: 15px;
+}
+
+.sunrise-time, .sunset-time {
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+  text-shadow: -2px 4px 10px rgba(0, 0, 0, 85%);
+}
+
+.todays-sunrise, .todays-sunset {
+  font-size: 26px;
+}

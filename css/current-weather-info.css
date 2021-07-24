@@ -1,0 +1,142 @@
+.your-location {
+  margin-top: 15px;
+  font-weight: 300;
+  font-size: 28px;
+  text-align: center;
+}
+
+.current-day-info {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.now-weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.now-weather-image {
+  width: 130px;
+  margin: 0 15px;
+  margin-left: 30px;
+}
+
+.weather-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-weather-descp {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 200;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.current-temperature {
+  width: 250px;
+  margin: 0 15px;
+}
+
+.temperature-c-or-f {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.celsius-or-fahrenheit {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-right: 15px;
+}
+
+.TEMPERATURE {
+  margin: 0 10px 0 15px;
+}
+
+.temperature-number {
+  font-weight: 100;
+  font-size: 86px;
+}
+
+.celsius {
+  height: 30px;
+}
+
+.fahrenheit {
+  height: 30px;
+}
+
+.C {
+  font-weight: 300;
+  font-size: 32px; 
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.F {
+  font-weight: 200;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.day-and-time {
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.feels-like, .current-day-and-time {
+  text-align: center;
+}
+
+.feels-like {
+  margin-top: 5px;
+}
+
+.temp-feels-like {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.other-current-information {
+  width: 285px;
+  margin-right: 35px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.other-information {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.visibility {
+  margin-top: -5px;
+}
+
+.other-info-title {
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.other-info-value {
+  font-weight: 300;
+  font-size: 22px;
+}
