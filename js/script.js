@@ -182,9 +182,42 @@ function getOtherCityWeather(cityName) {
   })
   .then(function() {
     displayWeather();
+    celciusOrFahrenheitUnits();
   });
 }
 
+// DISPLAY C OR F CORRECTLY WHEN CHANHGING CITY
+function celciusOrFahrenheitUnits() {
+  if ( weather.temperature.unit == "celsius" ) {
+    let celsius = weather.temperature.value;
+    celsius = Math.floor(celsius);
+
+    tempElement.innerHTML = `<h1 class="temperature-number">${celsius}°C</h1>`;
+    feelsLikeElenemt.innerHTML = `<h3 class="temp-feels-like">Feels like ${celsius}°</h3>`;
+    weather.temperature.unit = "celsius";
+
+    document.getElementById("C").style.fontWeight = "300";
+    document.getElementById("C").style.fontSize = "32px";
+    document.getElementById("F").style.fontWeight = "200";
+    document.getElementById("F").style.fontSize = "24px";
+    document.getElementById("F").style.marginTop = "0px";
+  } else if ( weather.temperature.unit == "fahrenheit" ) {
+    let fahrenheit = celsiusToFahrenheit(weather.temperature.value);
+    fahrenheit = Math.floor(fahrenheit); 
+
+    tempElement.innerHTML = `<h1 class="temperature-number">${fahrenheit}°F</h1>`;
+    feelsLikeElenemt.innerHTML = `<h3 class="temp-feels-like">Feels like ${fahrenheit}°</h3>`;
+    weather.temperature.unit = "fahrenheit";
+
+    document.getElementById("F").style.fontWeight = "300";
+    document.getElementById("F").style.fontSize = "32px";
+    document.getElementById("F").style.marginTop = "-6px";
+    document.getElementById("C").style.fontWeight = "200";
+    document.getElementById("C").style.fontSize = "24px";
+  }
+}
+
+// MONTHS ARRAY
 const months = [
   "January",
  "February",
@@ -210,5 +243,5 @@ setInterval(() => {
   const minutes = time.getMinutes();
   const ampm = hour >= 12 ? "PM" : "AM";
 
-  timeAndDateElement.innerHTML = `${months[month]} ${date}, ${(hours12Format < 10 ? "0"+hours12Format: hours12Format)}:${(minutes < 10 ? "0"+minutes: minutes)} ${ampm}`;
+  timeAndDateElement.innerHTML = `${ months[month] } ${ date }, ${( hours12Format < 10 ? + hours12Format : hours12Format )}:${( minutes < 10 ? "0" + minutes : minutes) } ${ ampm }`;
 }, 1000)
